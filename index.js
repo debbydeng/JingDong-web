@@ -8,11 +8,11 @@ $(function(){
         var $this=$(this);
         $this.hover(function(){
             $this.css({background:"#fff",border:"1px solid #ddd"});
-            $this.find(".glyphicon-chevron-down").attr("class","glyphicon glyphicon-chevron-up");
+            $this.find(".glyphicon").addClass("up").html("&#8595");
             $this.find(".menu").css({display:"block"});
         },function(){
             $this.css({background:"transparent",border:"none"});
-            $this.find(".glyphicon-chevron-up").attr("class","glyphicon glyphicon-chevron-down");
+            $this.find(".up").html("&#8593").removeClass("up");
             $this.find(".menu").hide();
         })
     });
